@@ -1,0 +1,87 @@
+.container{
+    background-color: azure;
+    border: 2px solid black;
+    width: 350px;
+    height: 480px;
+    text-align: left;
+    margin: 60px auto;
+    padding: 20px;
+}
+h1{
+    margin-left: 20px;
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+}
+.inputbox1{
+    margin-top:40px; 
+    height: 50px;
+    font-size: 20px;
+}
+#firstname{
+    width:250px;
+    height: 25px;
+}
+.inputbox2{
+    margin-top:10px;
+    height: 50px; 
+    font-size: 20px;
+}
+#lastname{
+    width:250px;
+    height: 25px;
+}
+.input-email{
+    margin-top:1px; 
+    font-size: 20px;
+}
+.input-password{
+    margin-top:10px;
+    font-size: 20px; 
+}
+#email{
+    margin: 10px auto;
+    width: 290px;
+    height: 25px;
+}
+#password{
+    margin: 20px auto;
+    width: 260px;
+    height: 25px;
+}
+.btn{
+    background-color: green;
+    margin-top: 20px;
+    width: 260px;
+    height: 40px;
+    margin-left: 80px;
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+.inputbox1-requid{
+    color: red;
+    font-size: xx-small;
+}
+.inputbox2-requid{
+    color: red;
+    font-size: xx-small;
+}
+.input-email-requid{
+    color: red;
+    font-size: xx-small; 
+}
+.Prequid{
+    color: red;
+    font-size: xx-small;
+}
+.onsuccess{
+    margin-top: 10px;
+    border: 2px solid green;
+    background-color:green;
+}
+.onerror{
+    margin-top: 10px;
+    border: 2px solid red;
+    background-color:red;
+}

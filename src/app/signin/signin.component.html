@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="login">
+        <h1>Sign-in Form</h1>
+        <form [formGroup]="signform" (ngSubmit)="onsubmit()">
+            <div class="inputbox1">
+                <label for="firstname">Firstname</label>
+                <input type="text" name="firstname" id="firstname" formControlName="firstname" placeholder="First Name">
+                <div class="inputbox1-requid">
+                    <p *ngIf="signform.get('firstname').invalid && signform.get('firstname').touched">First Name is Requid</p>
+                </div>
+                </div>
+                <div class="inputbox2">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" formControlName="lastname" placeholder="Last Name">
+                    <div class="inputbox2-requid">
+                        <p *ngIf="signform.get('lastname').invalid && signform.get('lastname').touched">Last Name is Requid</p>
+                    </div>
+                    </div>
+            <div class="input-email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" formControlName="email" placeholder="Enter your Email">
+            <div class="input-email-requid">
+                <p *ngIf="signform.get('email').invalid && signform.get('email').touched">Enter valid email</p>
+            </div>
+            </div>
+            <div class="input-password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" formControlName="password" placeholder="Enter eight character Password">
+            <div class="Prequid">
+                <p *ngIf="signform.get('password').invalid && signform.get('password').touched">Password is requid</p>
+            </div>
+            </div>
+            <div class="submit-btn">
+                <button type="submit" class="btn" [disabled]="signform.invalid">submit</button>
+            </div>
+        </form> 
+    </div>
+        <div class="onsuccess"  
+        *ngIf="message.length > 0"> 
+        {{message}}</div>
+        <div class="onerror"  
+        *ngIf="userError">
+        {{userError.message}}
+    </div>
+    
+</div>
